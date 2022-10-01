@@ -2,6 +2,6 @@ from .base import *  # NOQA
 from .base import env
 
 # Base
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+#ALLOWED_HOSTS = ['localhost']
