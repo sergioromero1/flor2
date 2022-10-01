@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from orders import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.load_index, name='index'),
+    path('error-404/', views.load_error_404, name='error-404')
 ]
+
+handler404 = "orders.views.load_error_404"
